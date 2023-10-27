@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cash register</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Cash register app</h1>
+    <div class="container">
+        <h1 class="heading">Cash Register</h1>
+        <p class="description">
+            Enter the bill amount ans cash givem by the customer and know the minimum no. of notes to return.
+        </p>
+        <label for="bill-amount">Bill Amount:</label>
+        <input id="bill-amount" type="text"/>
+        <label for="Cash-given">Cash given:</label>
+        <input id="Cash-given" type="text" />
+        <button id="check_btn">Check</button>
+        <p class="error-message"></p>
+        <table class="change-table">
+            <caption> return change </caption>
+            <tr>
+                <th>No of Notes</th>
+                <td class="No_of_notes"></td>
+                <td class="No_of_notes"></td>
+                <td class="No_of_notes"></td>
+                <td class="No_of_notes"></td>
+                <td class="No_of_notes"></td>
+                <td class="No_of_notes"></td>
+                <td class="No_of_notes"></td>
+            </tr>
+            <tr>
+                <th> Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+
+            </tr>
+        </table>
+    </div>
+
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
